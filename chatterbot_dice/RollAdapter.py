@@ -23,7 +23,7 @@ class RollAdapter(LogicAdapter):
                 return 0, Statement('')
 
             if result:
-                return 1, Statement(dice.get_result())
+                return 1, Statement(result)
             else:
                 return 0, Statement('')
         except:
