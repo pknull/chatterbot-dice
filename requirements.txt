@@ -1,0 +1,2 @@
+ChatterBot==0.5.3
+-e git+git@github.com:pknull/rpg-dice.git@aaf4822aee7b641dc4e494a35cafec3ead93ee31#egg=dice_roller-master
