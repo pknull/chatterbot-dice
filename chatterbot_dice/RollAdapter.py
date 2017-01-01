@@ -12,7 +12,6 @@ class RollAdapter(LogicAdapter):
 
     def process(self, statement):
         from chatterbot.conversation import Statement
-        from botlib.processor.DiceRoller import DiceRoller
 
         word_list = statement.text.split()
 
