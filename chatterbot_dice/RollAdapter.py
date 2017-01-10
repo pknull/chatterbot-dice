@@ -3,8 +3,6 @@ from chatterbot.logic.logic_adapter import LogicAdapter
 from dice_roller.DiceThrower import DiceThrower
 
 
-
-
 class RollAdapter(LogicAdapter):
 
     def __init__(self, **kwargs):
@@ -14,7 +12,6 @@ class RollAdapter(LogicAdapter):
         from chatterbot.conversation import Statement
 
         word_list = statement.text.split()
-
         try:
             if word_list[0].lower() == 'roll':
                 dice = DiceThrower()
@@ -26,5 +23,8 @@ class RollAdapter(LogicAdapter):
                 return 1, Statement(result)
             else:
                 return 0, Statement('')
-        except:
+        except Exception as inst:
+            print('ouch')
+            print(type(inst))
+            print(inst)
             return 0, Statement('')

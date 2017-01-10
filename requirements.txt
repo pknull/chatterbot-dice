@@ -1,2 +1,15 @@
 ChatterBot==0.5.3
--e git+git@github.com:pknull/rpg-dice.git@aaf4822aee7b641dc4e494a35cafec3ead93ee31#egg=dice_roller-master
+-e git+git@github.com:pknull/rpg-dice.git@2e0f83a9c45f7d6e38a611fa7494b8655c543ead#egg=dice_roller
+future==0.16.0
+jsondatabase==0.1.7
+mpmath==0.19
+nltk==3.2.2
+numpy==1.11.3
+oauthlib==2.0.1
+pymongo==3.4.0
+pyparsing==2.1.10
+python-twitter==3.2
+requests==2.12.4
+requests-oauthlib==0.7.0
+six==1.10.0
+sympy==1.0
